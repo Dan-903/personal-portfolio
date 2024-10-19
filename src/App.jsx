@@ -1,7 +1,6 @@
-import { useState } from 'react'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -25,9 +24,6 @@ function App() {
                   <span className="icon-bar" />
                   <span className="icon-bar" />
                 </button>
-                <a href="#hero" className="site-logo">
-                  <img src="/public/assets/img/logo.png" alt="logo" />
-                </a>
               </div>
               {/* /.navbar-header */}
               <div className="main-menu" id="portfolio-perfect-collapse">
@@ -60,9 +56,9 @@ function App() {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <h1>Alex Vidal</h1>
+                <h1>Daniel Latina</h1>
                 <div className="page-scroll">
-                  <p className="job-title">Full Stack Developer</p>
+                  <p className="job-title">Front End Developer</p>
                   <a href="#contact" className="btn btn-fill ">
                     Hire me
                   </a>
@@ -73,7 +69,7 @@ function App() {
                 </div>
               </div>
               <div className="col-md-6 text-right">
-                <img src="/public/assets/img/alex-vidal.png" alt="alex-vidal" />
+                <img src={`${import.meta.env.BASE_URL}assets/img/daniellatina.png`} alt="Daniel-Latina" />
               </div>
             </div>
           </div>
@@ -85,19 +81,16 @@ function App() {
               <div className="row">
                 <div className="col-md-6 col-md-offset-3">
                   <h2>About</h2>
-                  <img src="/public/assets/img/lines.svg" className="img-lines" alt="lines" />
+                  <img src={`${import.meta.env.BASE_URL}assets/img/lines.svg`} className="img-lines" alt="lines" />
                   <p>
-                    Hello! I'm Alex, a full stuck developer, a Ruby enthusiast, and a
-                    guy slighty obsessed for code quality. Also I'm a co-founder of
-                    pykod.com. I’m currently available for freelance work. If you have
-                    a project that you want to get started or think you need my help
-                    with something, then get in touch.
+                    Hello! I'm Daniel, a Front-end developer, a history enthusiast,
+                    likes to read how codes work. I am a lazy person that wants to do
+                    things in the most effiecient way "that I know of" possible.
                   </p>
                   <a
-                    href="http://www.grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf"
+                    href={`${import.meta.env.BASE_URL}assets/CV/DANIEL I. LATINA CV.pdf`}
                     className="btn btn-fill"
-                    target="_blank"
-                    download=""
+                    download
                   >
                     Download my cv
                   </a>
@@ -110,7 +103,7 @@ function App() {
             <div className="container">
               <div className="text-center">
                 <h3>My Skills</h3>
-                <img src="/public/assets/img/lines.svg" className="img-lines" alt="lines" />
+                <img src={`${import.meta.env.BASE_URL}assets/img/lines.svg`} className="img-lines" alt="lines" />
               </div>
               <div className="row">
                 <div className="col-md-4">
@@ -120,7 +113,7 @@ function App() {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        data-transitiongoal={100}
+                        data-transitiongoal={75}
                       />
                       {/* /.progress-bar */}
                     </div>
@@ -133,7 +126,7 @@ function App() {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        data-transitiongoal={75}
+                        data-transitiongoal={25}
                       />
                       {/* /.progress-bar */}
                     </div>
@@ -148,7 +141,7 @@ function App() {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        data-transitiongoal={82}
+                        data-transitiongoal={50}
                       />
                       {/* /.progress-bar */}
                     </div>
@@ -156,12 +149,12 @@ function App() {
                   </div>
                   {/* /.skill */}
                   <div className="skill">
-                    <h4>Ruby</h4>
+                    <h4>MySQL</h4>
                     <div className="progress">
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        data-transitiongoal={66}
+                        data-transitiongoal={50}
                       />
                       {/* /.progress-bar */}
                     </div>
@@ -176,7 +169,7 @@ function App() {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        data-transitiongoal={97}
+                        data-transitiongoal={25}
                       />
                       {/* /.progress-bar */}
                     </div>
@@ -189,7 +182,7 @@ function App() {
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        data-transitiongoal={45}
+                        data-transitiongoal={25}
                       />
                       {/* /.progress-bar */}
                     </div>
@@ -209,39 +202,27 @@ function App() {
               <div className="row">
                 <div className="col-md-12">
                   <h3>What i do</h3>
-                  <img src="/public/assets/img/lines.svg" className="img-lines" alt="lines" />
+                  <img src={`${import.meta.env.BASE_URL}assets/img/lines.svg`} className="img-lines" alt="lines" />
                 </div>
-                <div className="col-sm-4">
+                <div className="col-sm-6">
                   <div className="service">
-                    <img src="/public/assets/img/front-end.svg" alt="Front End Developer" />
+                    <img src={`${import.meta.env.BASE_URL}assets/img/front-end.svg`} alt="Front End Developer" />
                     <h4>Front-end</h4>
                     <p>
-                      As a javascript developer, I have experience in HTML5 and CSS3
-                      techniques working with jQuery or more advanced javascript MVC
-                      frameworks such as angular
+                      I have a modest amounts of experience in using HTML5, CSS and JS.
+                      I am also learning how to use react.js and tailwind CSS.
+                      
                     </p>
                   </div>
                   {/* /.service */}
                 </div>
-                <div className="col-sm-4">
+                <div className="col-sm-6">
                   <div className="service">
-                    <img src="/public/assets/img/back-end.svg" alt="Back End Developer" />
+                    <img src={`${import.meta.env.BASE_URL}assets/img/back-end.svg`} alt="Back End Developer" />
                     <h4>Back-end</h4>
                     <p>
-                      Utilising php frameworks such as Zend or creating bespoke code,
-                      I've written services supporting thousands of users, including
-                      REST APIs, e-learning applications and more.
-                    </p>
-                  </div>
-                  {/* /.service */}
-                </div>
-                <div className="col-sm-4">
-                  <div className="service">
-                    <img src="/public/assets/img/consultancy.svg" alt="Coding" />
-                    <h4>Consultancy</h4>
-                    <p>
-                      As well as providing development services, I can also help you
-                      decide strategic roadmaps via consultancy services.
+                     I have little experience in back-end development.
+                     Though I have used PHP and MySQL in one project I had.
                     </p>
                   </div>
                   {/* /.service */}
@@ -254,22 +235,22 @@ function App() {
             <div className="container">
               <div className="text-center">
                 <h3>My recent Works</h3>
-                <img src="/public/assets/img/lines.svg" className="img-lines" alt="lines" />
+                <img src={`${import.meta.env.BASE_URL}assets/img/lines.svg`} className="img-lines" alt="lines" />
               </div>
               <div className="row">
-                <div className="col-md-4 col-xs-6">
+                <div className="col-md-4 col-sm-10 col-xs-6">
                   <div className="portfolio-item">
                     <img
-                      src="/public/assets/img/portfolio-1.jpg"
+                      src={`${import.meta.env.BASE_URL}assets/img/daniels-coffee.png`}
                       className="img-res"
-                      alt=""
+                      alt="Daniel's Coffee Website"
                     />
                     <div className="portfolio-item-info">
-                      <h4>Project Title</h4>
+                      <h4>Daniel's Coffee Website</h4>
                       <a href="#" data-toggle="modal" data-target="#portfolioItem1">
                         <span className="glyphicon glyphicon-eye-open" />
                       </a>
-                      <a href="#">
+                      <a href="https://danielscoffeetest.netlify.app/" target="_blank">
                         <span className="glyphicon glyphicon-link" />
                       </a>
                     </div>
@@ -277,10 +258,10 @@ function App() {
                   </div>
                   {/* /.portfolio-item */}
                 </div>
-                <div className="col-md-4 col-xs-6">
+                <div className="col-md-4 col-sm-10 col-xs-6">
                   <div className="portfolio-item">
                     <img
-                      src="/public/assets/img/portfolio-2.jpg"
+                      src={`${import.meta.env.BASE_URL}assets/img/mock-portfolio.png`}
                       className="img-res"
                       alt=""
                     />
@@ -289,7 +270,7 @@ function App() {
                       <a href="#" data-toggle="modal" data-target="#portfolioItem2">
                         <span className="glyphicon glyphicon-eye-open" />
                       </a>
-                      <a href="#">
+                      <a href="https://my-portfolio-non-responsive.netlify.app/" target="_blank">
                         <span className="glyphicon glyphicon-link" />
                       </a>
                     </div>
@@ -297,79 +278,19 @@ function App() {
                   </div>
                   {/* /.portfolio-item */}
                 </div>
-                <div className="col-md-4 col-xs-6">
+                <div className="col-md-4 col-sm-10 col-xs-6">
                   <div className="portfolio-item">
                     <img
-                      src="/public/assets/img/portfolio-3.jpg"
+                      src={`${import.meta.env.BASE_URL}assets/img/infograph.png`}
                       className="img-res"
-                      alt=""
+                      alt="infograph.png"
                     />
                     <div className="portfolio-item-info">
                       <h4>Project Title</h4>
                       <a href="#" data-toggle="modal" data-target="#portfolioItem3">
                         <span className="glyphicon glyphicon-eye-open" />
                       </a>
-                      <a href="#">
-                        <span className="glyphicon glyphicon-link" />
-                      </a>
-                    </div>
-                    {/* /.portfolio-item-info */}
-                  </div>
-                  {/* /.portfolio-item */}
-                </div>
-                <div className="col-md-4 col-xs-6">
-                  <div className="portfolio-item">
-                    <img
-                      src="/public/assets/img/portfolio-4.jpg"
-                      className="img-res"
-                      alt=""
-                    />
-                    <div className="portfolio-item-info">
-                      <h4>Project Title</h4>
-                      <a href="#" data-toggle="modal" data-target="#portfolioItem4">
-                        <span className="glyphicon glyphicon-eye-open" />
-                      </a>
-                      <a href="#">
-                        <span className="glyphicon glyphicon-link" />
-                      </a>
-                    </div>
-                    {/* /.portfolio-item-info */}
-                  </div>
-                  {/* /.portfolio-item */}
-                </div>
-                <div className="col-md-4 col-xs-6">
-                  <div className="portfolio-item">
-                    <img
-                      src="/public/assets/img/portfolio-5.jpg"
-                      className="img-res"
-                      alt=""
-                    />
-                    <div className="portfolio-item-info">
-                      <h4>Project Title</h4>
-                      <a href="#" data-toggle="modal" data-target="#portfolioItem5">
-                        <span className="glyphicon glyphicon-eye-open" />
-                      </a>
-                      <a href="#">
-                        <span className="glyphicon glyphicon-link" />
-                      </a>
-                    </div>
-                    {/* /.portfolio-item-info */}
-                  </div>
-                  {/* /.portfolio-item */}
-                </div>
-                <div className="col-md-4 col-xs-6">
-                  <div className="portfolio-item">
-                    <img
-                      src="/public/assets/img/portfolio-6.jpg"
-                      className="img-res"
-                      alt=""
-                    />
-                    <div className="portfolio-item-info">
-                      <h4>Project Title</h4>
-                      <a href="#" data-toggle="modal" data-target="#portfolioItem6">
-                        <span className="glyphicon glyphicon-eye-open" />
-                      </a>
-                      <a href="#">
+                      <a href="https://inforgraphwebsiteactivity.netlify.app/" target="_blank">
                         <span className="glyphicon glyphicon-link" />
                       </a>
                     </div>
@@ -385,13 +306,13 @@ function App() {
             <div className="container">
               <div className="row">
                 <div className="col-sm-4 col-xs-12">
-                  <p className="counter start" data-to={10} data-speed={2000}>
+                  <p className="counter start" data-to={0} data-speed={2000}>
                     0
                   </p>
                   <h4>Years Experience</h4>
                 </div>
                 <div className="col-sm-4 col-xs-12">
-                  <p className="counter start" data-to={120} data-speed={2000}>
+                  <p className="counter start" data-to={3} data-speed={2000}>
                     0
                   </p>
                   <h4>Projects Delivered</h4>
@@ -419,7 +340,7 @@ function App() {
           <section id="contact" className="site-section section-form text-center">
             <div className="container">
               <h3>Contact</h3>
-              <img src="/public/assets/img/lines.svg" className="img-lines" alt="lines" />
+              <img src={`${import.meta.env.BASE_URL}assets/img/lines.svg`} className="img-lines" alt="lines" />
               <form>
                 <div className="row">
                   <div className="col-sm-6">
@@ -460,37 +381,41 @@ function App() {
           {/* /.section-form */}
         </main>
         {/* /#main */}
-        <footer id="colophon" className="site-footer">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-4 col-xs-12">
-                <a className="icon facebook-bg" href="#">
-                  <i className="icon-facebook" />
-                </a>
-                <a className="icon twitter-bg" href="#">
-                  <i className="icon-twitter" />
-                </a>
-                <a className="icon gplus-bg" href="#">
-                  <i className="icon-linkedin" />
-                </a>
-                <a className="icon linkedin-bg" href="#">
-                  <i className="icon-gplus" />
-                </a>
-              </div>
-              <div className="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
-                <p className="copyright">2017. All Rights Reserved</p>
-              </div>
-              <div className="col-sm-4 col-xs-3">
-                <div className="text-right page-scroll">
-                  <a className="icon icon-up-bg" href="#hero">
-                    <i className="icon-up" />
-                  </a>
+        <footer className="footer">
+            <div className="container-foot">
+              <div className="row-foot">
+                <div className="footer-col">
+                  <h4>My Info</h4>
+                  <ul>
+                    <li>
+                      <p>danielisanan@gmail.com</p>
+                    </li>
+                    <li>
+                      <p>McArthur Highway Apalit, Pampanga</p>
+                    </li>
+                    <li>
+                      <p>09771230941</p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-col">
+                  <h4>My Socials</h4>
+                  <div className="social-links">
+                    <a href="https://www.facebook.com/Bopz903/" target="_blank">
+                      <img className="icons" src={`${import.meta.env.BASE_URL}assets/img/facebook.png`} alt="" />
+                    </a>
+                    <a href="https://github.com/Dan-903" target="_blank">
+                    <img className="icons" src={`${import.meta.env.BASE_URL}assets/img/github.png`} alt="" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/daniel-latina-b57003278/" target="_blank">
+                    <img className="icons" src={`${import.meta.env.BASE_URL}assets/img/linkedin.png`} alt="" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </footer>
-        {/* /#footer */}
+          </footer>
+
         {/* Modals */}
         <div id="portfolioItem1" className="modal fade" role="dialog">
           <div className="modal-dialog">
@@ -499,23 +424,18 @@ function App() {
                 <a className="close" data-dismiss="modal">
                   <span className="glyphicon glyphicon-remove" />
                 </a>
-                <img className="img-res" src="/public/assets/img/portfolio-1.jpg" alt="" />
+                <img className="img-res" src={`${import.meta.env.BASE_URL}assets/img/Daniels-coffee.png`} alt="" />
               </div>
               <div className="modal-body">
-                <h4 className="modal-title">Project title</h4>
+                <h4 className="modal-title">Daniel's Coffee Website</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  commodo finibus tristique. Maecenas dignissim condimentum sem eu
-                  tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-                  urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-                  turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-                  ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-                  placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                  hendrerit.
+                  This was a project in my Responsive Web Design subject
+                  during my 2nd year of college. I was tasked to convert the main page 
+                  of my team's website.
                 </p>
               </div>
               <div className="modal-footer">
-                <a href="#" className="btn btn-fill">
+                <a href="https://danielscoffeetest.netlify.app/" target="_blank" className="btn btn-fill">
                   Visit Page
                 </a>
               </div>
@@ -532,23 +452,17 @@ function App() {
                 <a className="close" data-dismiss="modal">
                   <span className="glyphicon glyphicon-remove" />
                 </a>
-                <img className="img-res" src="/public/assets/img/portfolio-2.jpg" alt="" />
+                <img className="img-res" src={`${import.meta.env.BASE_URL}assets/img/mock-portfolio.png`} alt="mock-portfolio.png" />
               </div>
               <div className="modal-body">
-                <h4 className="modal-title">Project title</h4>
+                <h4 className="modal-title">Mock Portfolio</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  commodo finibus tristique. Maecenas dignissim condimentum sem eu
-                  tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-                  urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-                  turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-                  ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-                  placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                  hendrerit.
+                  This is a mock portfolio project. Isused by my instructor as a project
+                  during finals in 1st term of my 2nd year.
                 </p>
               </div>
               <div className="modal-footer">
-                <a href="#" className="btn btn-fill">
+                <a href="https://my-portfolio-non-responsive.netlify.app/" target="_blank" className="btn btn-fill">
                   Visit Page
                 </a>
               </div>
@@ -565,23 +479,18 @@ function App() {
                 <a className="close" data-dismiss="modal">
                   <span className="glyphicon glyphicon-remove" />
                 </a>
-                <img className="img-res" src="/public/assets/img/portfolio-3.jpg" alt="" />
+                  <img className="img-res" src={`${import.meta.env.BASE_URL}assets/img/infograph.png`} alt="infograph.png" />
               </div>
               <div className="modal-body">
-                <h4 className="modal-title">Project title</h4>
+                <h4 className="modal-title">Infograph Website</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  commodo finibus tristique. Maecenas dignissim condimentum sem eu
-                  tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-                  urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-                  turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-                  ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-                  placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                  hendrerit.
+                  I chose to make an infograph about the most popular anime according
+                  to My Anime List for my activity. I did not connect my website to My Anime List, 
+                  I just typed the info into my HTML.
                 </p>
               </div>
               <div className="modal-footer">
-                <a href="#" className="btn btn-fill">
+                <a href="https://inforgraphwebsiteactivity.netlify.app/" target="_blank" className="btn btn-fill">
                   Visit Page
                 </a>
               </div>
@@ -590,106 +499,6 @@ function App() {
           </div>
           {/* /.modal-dialog */}
         </div>
-        {/* /.modal */}
-        <div id="portfolioItem4" className="modal fade" role="dialog">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <a className="close" data-dismiss="modal">
-                  <span className="glyphicon glyphicon-remove" />
-                </a>
-                <img className="img-res" src="/public/assets/img/portfolio-4.jpg" alt="" />
-              </div>
-              <div className="modal-body">
-                <h4 className="modal-title">Project title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  commodo finibus tristique. Maecenas dignissim condimentum sem eu
-                  tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-                  urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-                  turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-                  ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-                  placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                  hendrerit.
-                </p>
-              </div>
-              <div className="modal-footer">
-                <a href="#" className="btn btn-fill">
-                  Visit Page
-                </a>
-              </div>
-            </div>
-            {/* /.modal-content */}
-          </div>
-          {/* /.modal-dialog */}
-        </div>
-        {/* /.modal */}
-        <div id="portfolioItem5" className="modal fade" role="dialog">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <a className="close" data-dismiss="modal">
-                  <span className="glyphicon glyphicon-remove" />
-                </a>
-                <img className="img-res" src="/public/assets/img/portfolio-5.jpg" alt="" />
-              </div>
-              <div className="modal-body">
-                <h4 className="modal-title">Project title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  commodo finibus tristique. Maecenas dignissim condimentum sem eu
-                  tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-                  urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-                  turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-                  ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-                  placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                  hendrerit.
-                </p>
-              </div>
-              <div className="modal-footer">
-                <a href="#" className="btn btn-fill">
-                  Visit Page
-                </a>
-              </div>
-            </div>
-            {/* /.modal-content */}
-          </div>
-          {/* /.modal-dialog */}
-        </div>
-        {/* /.modal */}
-        <div id="portfolioItem6" className="modal fade" role="dialog">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <a className="close" data-dismiss="modal">
-                  <span className="glyphicon glyphicon-remove" />
-                </a>
-                <img className="img-res" src="/public/assets/img/portfolio-6.jpg" alt="" />
-              </div>
-              <div className="modal-body">
-                <h4 className="modal-title">Project title</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  commodo finibus tristique. Maecenas dignissim condimentum sem eu
-                  tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut
-                  urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet
-                  turpis facilisis consectetur quis vel ante. Integer in massa ut nibh
-                  ultricies sagittis imperdiet in ante. Nam sed turpis vel ante
-                  placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non
-                  hendrerit.
-                </p>
-              </div>
-              <div className="modal-footer">
-                <a href="#" className="btn btn-fill">
-                  Visit Page
-                </a>
-              </div>
-            </div>
-            {/* /.modal-content */}
-          </div>
-          {/* /.modal-dialog */}
-        </div>
-        {/* /.modal */}
 </>
 
   )
